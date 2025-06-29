@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olivetree Daycare</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="#" class="logo">
+                <!-- I'll assume the logo is also an asset -->
+                <img src="gambar/logo.PNG"> 
+            </a>
+            <ul class="sidebar">
+                <li onclick="hideMenu()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#4A5C3A"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg></a></li>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#programs">Programs</a></li>
+                <li><a href="#facilities">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <ul>
+                <li class="hideOnMobile"><a href="#hero">Home</a></li>
+                <li class="hideOnMobile"><a href="#about">About Us</a></li>
+                <li class="hideOnMobile"><a href="#programs">Programs</a></li>
+                <li class="hideOnMobile"><a href="#facilities">Gallery</a></li>
+                <li class="hideOnMobile"><a href="#contact">Contact</a></li>
+                <li onclick=toggleMenu() class="menu-icon"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#333"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <h1>Olivetree Daycare +</h1>
+                <p>Nurturing growth through the Montessori method.</p>
+                <a href="#contact" class="btn">Enroll Now</a>
+            </div>
+            <div class="hero-image">
+                <img src="gambar/logo_gede.png" alt="Olivetree Daycare Illustration" />
+            </div>
+        </section>
+
+        <section id="about" class="section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Why Olivetree?</h2>
+                    <p>Our Approach to Learning</p>
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>The Montessori Method</h3>
+                        <p>Metode Montessori mengutamakan pembelajaran yang disesuaikan dengan usia dan kebutuhan anak, di mana mereka dapat belajar melalui pengalaman langsung dengan alat dan bahan yang dirancang khusus. Dengan pendekatan ini, anak-anak belajar secara mandiri, namun tetap mendapat bimbingan untuk mengenal dunia mereka dengan cara yang menyenangkan dan bermakna.</p>
+                    </div>
+                    <div class="about-image">
+                        <img src="gambar/learning.png">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="facilities" class="section-padding" style="background-color: var(--secondary-color);">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Our Facilities</h2>
+                    <p>A Safe & Stimulating Environment</p>
+                </div>
+                <div class="facilities-grid">
+                    <div class="facility-card" data-page="kamar-tidur.html">
+                        <img src="gambar/kamar tidur.PNG">
+                        <div class="facility-info">
+                            <h3>Kamar Tidur Anak</h3>
+                            <p>Kamar tidur yang aman dan nyaman untuk istirahat dan tidur siang, lengkap dengan cerita pengantar tidur.</p>
+                        </div>
+                    </div>
+                    <div class="facility-card" data-page="area-bermain.html">
+                        <img src="gambar/ruang main.jpg">
+                        <div class="facility-info">
+                            <h3>Area Bermain Utama</h3>
+                            <p>Area bermain dalam ruangan kami yang dirancang untuk eksplorasi dan pembelajaran langsung.</p>
+                        </div>
+                    </div>
+                    <div class="facility-card" data-page="taman-bermain.html">
+                        <img src="gambar/taman.PNG">
+                        <div class="facility-info">
+                            <h3>Taman Bermain</h3>
+                            <p>Fasilitas luar ruangan kami mendorong aktivitas fisik, eksplorasi alam, dan interaksi sosial.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="programs" class="section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Programs & Fees</h2>
+                    <p>Find the Perfect Plan for Your Little One</p>
+                </div>
+                <div class="programs-content">
+                    <div class="programs-image">
+                        <img src="gambar/program.png">
+                    </div>
+                    <div class="programs-details">
+                        <ul>
+                            <li><strong>Registration Fee:</strong> Rp 2.150.000 <span>(Includes uniform, towel, and cutlery set)</span></li>
+                            <li><strong>Annual Fee:</strong> Rp 1.450.000</li>
+                        </ul>
+                        <hr>
+                        <ul>
+                            <li><strong>Full Day Monthly:</strong> Rp 2.400.000 <span>(07:00-17:00, 2 meals, 1 snack)</span></li>
+                            <li><strong>Half Day Monthly:</strong> Rp 1.650.000 <span>(5 hours, 1 meal, 1 snack)</span></li>
+                            <li><strong>Weekly Fee:</strong> Rp 900.000</li>
+                            <li><strong>Daily Fee:</strong> Rp 250.000 <span>(Min. 3 days)</span></li>
+                        </ul>
+                         <hr>
+                        <ul>
+                            <li><strong>Overtime:</strong> Rp 30.000 (first hour), Rp 50.000 (subsequent hours)</li>
+                            <li><strong>Parent CCTV Access:</strong> +Rp 350.000/month</li>
+                        </ul>
+                        <p class="note">All programs include Montessori activities.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section-padding" style="background-color: var(--secondary-color);">
+            <div class="container">
+                 <div class="section-header">
+                    <h2>Contact Us !</h2>
+                    <p>We'd Love to Hear From You</p>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Get in Touch</h3>
+                        <p>Have questions or want to schedule a visit? Reach out to us!</p>
+                        <ul>
+                            <li><strong>Address:</strong><br><a href="https://www.google.com/maps/place/Olivetree+Daycare/@-6.1983771,106.8827945,17z/data=!3m1!4b1!4m6!3m5!1s0x2e69f518765f7241:0xcbc0ea213e5b283a!8m2!3d-6.1983771!4d106.8827945!16s%2Fg%2F11wqg_vh4_?entry=ttu&g_ep=EgoyMDI1MDYxNy4wIKXMDSoASAFQAw%3D%3D" target="_blank">Jl. Balai Pustaka Barat No.358D Rawamangun - Jakarta Timur</a></li>
+                            <li><strong>Phone:</strong><br><a href="https://wa.me/6282258268695" target="_blank">0822-58268695</a></li>
+                            <li><strong>Instagram:</strong><br><a href="https://www.instagram.com/olivetreedaycare.id" target="_blank">@olivetreedaycare.id</a></li>
+                        </ul>
+                    </div>
+                    <div class="contact-image">
+                        <img src="gambar/asd-removebg-preview.png">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Olivetree Daycare. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

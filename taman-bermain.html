@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taman Bermain - Olivetree Daycare</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">
+                <img src="gambar/logo.png"> 
+            </a>
+            <ul class="sidebar">
+                <li onclick="hideMenu()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#4A5C3A"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg></a></li>
+                <li><a href="index.html#hero">Home</a></li>
+                <li><a href="index.html#about">About Us</a></li>
+                <li><a href="index.html#programs">Programs</a></li>
+                <li><a href="index.html#facilities">Gallery</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <ul>
+                <li class="hideOnMobile"><a href="#hero">Home</a></li>
+                <li class="hideOnMobile"><a href="#about">About Us</a></li>
+                <li class="hideOnMobile"><a href="#programs">Programs</a></li>
+                <li class="hideOnMobile"><a href="#facilities">Gallery</a></li>
+                <li class="hideOnMobile"><a href="#contact">Contact</a></li>
+                <li onclick=toggleMenu() class="menu-icon"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#333"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="facility-detail-section section-padding">
+            <div class="container">
+                <a href="index.html" class="btn btn-back">
+                    <span class="back-mobile">&larr; Back</span>
+                    <span class="back-desktop">&larr; Back to Home</span>
+                </a>
+                <div class="facility-detail-content">
+                    <div class="facility-detail-image">
+                        <img src="gambar/taman123.png" alt="Taman Bermain">
+                    </div>
+                    <div class="facility-detail-text-taman">
+                        <h2>Taman Bermain</h2>
+                        <p>Fasilitas taman bermain outdoor, anak-anak dapat menikmati berbagai kegiatan yang mendukung perkembangan mereka, baik secara fisik, mental, maupun sosial.</p>
+                        <p>Taman bermain outdoor ini menjadi tempat yang sempurna bagi anak-anak untuk menjelajahi alam, bergerak bebas, dan belajar melalui permainan</p>
+                        <ul>
+                            <li>Pengenalan Alam</li>
+                            <li>Permainan Motorik</li>
+                            <li>Kegiatan Montessori Motorik Halus</li>
+                            <li>Mengembangkan Sosial dan Emosional anak</li>
+                            <li>Meningkatkan Kesehatan Fisik</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Olivetree Daycare. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html> 
